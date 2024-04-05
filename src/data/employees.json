@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": 35,
+    "position": "Software Engineer",
+    "department": "Engineering",
+    "salary": 80000
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "age": 28,
+    "position": "Marketing Manager",
+    "department": "Marketing",
+    "salary": 75000
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "age": 42,
+    "position": "Senior Sales Representative",
+    "department": "Sales",
+    "salary": 90000
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "age": 31,
+    "position": "Human Resources Specialist",
+    "department": "Human Resources",
+    "salary": 70000
+  },
+  {
+    "id": 5,
+    "name": "David Lee",
+    "age": 40,
+    "position": "Finance Manager",
+    "department": "Finance",
+    "salary": 85000
+  },
+  {
+    "id": 6,
+    "name": "Sarah Garcia",
+    "age": 29,
+    "position": "Graphic Designer",
+    "department": "Design",
+    "salary": 60000
+  },
+  {
+    "id": 7,
+    "name": "Robert Martinez",
+    "age": 37,
+    "position": "Product Manager",
+    "department": "Product Management",
+    "salary": 95000
+  },
+  {
+    "id": 8,
+    "name": "Jessica Hernandez",
+    "age": 33,
+    "position": "Customer Support Supervisor",
+    "department": "Customer Support",
+    "salary": 72000
+  },
+  {
+    "id": 9,
+    "name": "Christopher Wilson",
+    "age": 45,
+    "position": "Operations Director",
+    "department": "Operations",
+    "salary": 100000
+  },
+  {
+    "id": 10,
+    "name": "Amanda Taylor",
+    "age": 27,
+    "position": "Junior Developer",
+    "department": "Engineering",
+    "salary": 60000
+  }
+]

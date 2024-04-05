@@ -1,9 +1,12 @@
 import { Request, Response } from "express";
+import employees from '../data/employees.json';
 
 export async function getAllEmployees(req: Request, res: Response): Promise<any> {
+  const count: number = parseInt(req.query?.count as unknown as string ?? employees.length) ?? employees.length;
+
   res.status(200).json({
     status: 200,
-    message: 'Successfully fetched.'
+    data: employees.slice(0, count)
   })
 }
 
