@@ -8,8 +8,8 @@ export async function getAllEmployees(req: Request, res: Response): Promise<any>
 }
 
 export async function getEmployee(req: Request, res: Response): Promise<any> {
-  res.status(200).json({
-    status: 200,
+  res.status(401).json({
+    status: 401,
     message: 'Permission not authorized.'
   })
 }

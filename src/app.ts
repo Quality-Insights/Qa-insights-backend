@@ -7,6 +7,6 @@ const app = express();
 
 app.use("/api/users", userRouter);
 app.use("/api/profile", profileRouter);
-app.use("api/employee", employeeRouter);
+app.use("/api/employee", employeeRouter);
 
 export default app;

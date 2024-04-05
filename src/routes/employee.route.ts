@@ -4,7 +4,7 @@ import { getAllEmployees, getEmployee, updateEmployee } from "../controllers/emp
 const employeeRouter = Router();
 
 employeeRouter.get('/getEmployees', getAllEmployees);
-employeeRouter.get('/getEmpoyee', getEmployee);
-employeeRouter.post('/updateEmployee', updateEmployee);
+employeeRouter.get('/getEmployee', getEmployee);
+employeeRouter.patch('/updateEmployee', updateEmployee);
 
 export default employeeRouter;
