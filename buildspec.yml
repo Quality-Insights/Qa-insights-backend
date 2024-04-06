@@ -7,6 +7,7 @@ phases:
 
   build:
     commands:
+      - npm install -g newman-reporter-htmlextra
       - npm i -g newman
       # Run Newman tests and save results to a JSON file
       - newman run https://api.getpostman.com/collections/10326541-b010c997-bbc2-40d6-925a-81adcc3fc2b7?apikey=PMAK-660fd60b9be1ae00018b044f-730d9c0dee92b11d718716895c40d45677 -e https://api.getpostman.com/environments/10326541-ea091767-2a79-4634-8b74-5cfb97fa5bff?apikey=PMAK-660fd60b9be1ae00018b044f-730d9c0dee92b11d718716895c40d45677 --reporters cli,json --reporter-json-export test-results.json
