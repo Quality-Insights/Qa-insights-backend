@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - rm -rf *  # Clear the repository if there are any existing files
+
+  build:
+    commands:
+      # Run Newman tests and save results to a JSON file
+      - newman run https://dark-robot-23.postman.co/workspace/QA-Insights---Hackathon~e12f455d-d67f-4aef-b219-d7d495c534a6/collection/10326541-b010c997-bbc2-40d6-925a-81adcc3fc2b7?action=share&creator=34089952 --reporters cli,json --reporter-json-export test-results.json
+      # Upload test-results.log to S3 bucket with build ID appended
+      - aws s3 cp ./test-results.json s3://qa-postman-logs/${CODEBUILD_BUILD_ID}/test-results.log
+
+  post_build:
+    commands:
+      - ls
